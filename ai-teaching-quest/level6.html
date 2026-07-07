@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>數位平台指揮艙｜AI 教學封印任務</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body data-level="6">
+    <div class="app-shell">
+      <div class="hero-bg"></div><div class="grid-glow"></div>
+      <header class="topbar">
+        <a class="brand" href="index.html"><span class="brand-mark">AI</span><span><span class="brand-title">AI 教學封印任務</span><span class="brand-subtitle">完成關卡，帶回可用的 AI 教學判斷</span></span></a>
+        <nav class="nav-actions"><a class="btn ghost" href="index.html">回首頁</a></nav>
+      </header>
+      <main class="level-main">
+        <section class="level-hero"><div><div class="level-kicker" data-level-kicker></div><h1 data-level-title></h1><p data-level-summary></p></div><div class="reward-orb" data-reward></div></section>
+        <section class="panel"><h2>任務目標</h2><p data-level-objective></p><ul class="meta-list"><li><strong>教師任務：</strong><span data-level-prompt></span></li><li><strong>通關寶物：</strong><span data-reward-name></span></li></ul></section>
+        <div data-task></div>
+        <section class="panel"><div class="level-actions"><button class="btn primary" data-complete>檢查並取得寶物</button><a class="btn ghost" href="index.html">回封印中心</a></div><div class="feedback" data-feedback>完成任務後按下檢查，系統會確認是否取得寶物。</div></section>
+      </main>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>
