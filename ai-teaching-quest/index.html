@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI 教學封印任務｜中小學教師數位與 AI 教學指引</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <div class="hero-bg"></div>
+      <div class="grid-glow"></div>
+      <header class="topbar">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">AI</span>
+          <span>
+            <span class="brand-title">AI 教學封印任務</span>
+            <span class="brand-subtitle">中小學教師數位與 AI 教學指引遊戲化學習</span>
+          </span>
+        </a>
+        <nav class="nav-actions">
+          <button class="btn ghost" data-reset>重置進度</button>
+        </nav>
+      </header>
+
+      <main class="home-main">
+        <section class="mission-column" data-missions-left aria-label="前三個關卡"></section>
+
+        <section class="seal-core">
+          <div class="seal-title">
+            <h1>解開 AI 教學封印大門</h1>
+            <p>完成六個任務，蒐集六件寶物，回到中心啟動封印門。每一關都聚焦教師能帶回教室使用的 AI 教學判斷：理解指引、設計課程、注意風險、培養 AI 素養，並善用數位學習平台。</p>
+          </div>
+          <div class="seal-door" aria-label="AI 封印大門">
+            <div class="seal-ring"></div>
+            <div class="seal-ring"></div>
+            <div class="seal-ring"></div>
+            <button class="door-button" data-door disabled>0/6</button>
+          </div>
+          <div class="progress-strip" data-gems aria-label="寶物進度"></div>
+        </section>
+
+        <section class="mission-column" data-missions-right aria-label="後三個關卡"></section>
+      </main>
+    </div>
+
+    <dialog class="modal" id="certificateModal">
+      <div class="modal-inner">
+        <h2>封印解除，產生任務證書</h2>
+        <p>請輸入姓名，下載可用於研習完成紀錄或課程闖關成果的證書。</p>
+        <label for="teacherName">姓名</label>
+        <input id="teacherName" type="text" placeholder="請輸入姓名">
+        <canvas class="certificate-preview" id="certificateCanvas" width="1400" height="980"></canvas>
+        <div class="modal-actions">
+          <button class="btn primary" data-download-certificate>下載證書</button>
+          <form method="dialog">
+            <button class="btn ghost">關閉</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="game.js"></script>
+  </body>
+</html>
